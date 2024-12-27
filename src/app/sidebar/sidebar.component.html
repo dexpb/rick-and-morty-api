@@ -1,0 +1,22 @@
+<div class="bg-violet-500 h-full flex flex-col items-center py-10 fixed z-0">
+  <div class="flex flex-col justify-center items-center gap-6 m-auto px-5">
+    <a
+      class="text-xl text-white hover:text-gray-300 transition"
+      href="/characters"
+      >Personagens</a
+    >
+    <a
+      class="text-xl text-white hover:text-gray-300 transition"
+      href="/episodes/season/:season"
+      >Todos os episódios</a
+    >
+    <ng-container *ngIf="authService.isLoggedIn()">
+      <div class="mt-6 text-white flex flex-col items-center">
+        <img [src]="authService.getUser().imageUrl" alt="Profile Image" class="w-16 h-16 rounded-full mb-4">
+        <h3 class="text-xl font-bold">Informação do usuário</h3>
+        <h1 class="capitalize"> Usuário: {{ authService.getUser().username }}</h1>
+        <h1>Email: {{ authService.getUser().email }}</h1>
+      </div>
+    </ng-container>
+  </div>
+</div>

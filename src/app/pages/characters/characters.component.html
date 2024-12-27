@@ -1,0 +1,71 @@
+<div class="w-full min-h-full">
+  <div class="mb-5 flex items-center justify-center flex-col p-6 mt-20">
+    <button
+      class="fixed top-4 left-4 px-4 py-2 bg-violet-500 text-white rounded-md hover:bg-violet-600 transition"
+    >
+      <a href="/">Voltar</a>
+    </button>
+    <input
+      type="text"
+      (input)="onNameInput($event)"
+      placeholder="Pesquisar pelo nome do personagem"
+      class="px-4 py-2 border rounded-md mb-4 w-80"
+    />
+    <div class="flex space-x-4 mb-6">
+      <button
+        (click)="filterByStatus('all')"
+        class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
+      >
+        Todos
+      </button>
+      <button
+        (click)="filterByStatus('alive')"
+        class="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition"
+      >
+        Vivos
+      </button>
+      <button
+        (click)="filterByStatus('dead')"
+        class="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition"
+      >
+        Mortos
+      </button>
+      <button
+        (click)="filterByStatus('unknown')"
+        class="px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600 transition"
+      >
+        Desconhecido
+      </button>
+    </div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+    >
+      <div
+        *ngFor="let character of filteredCharacters; trackBy: trackById"
+        class="character-card p-4 border rounded-md flex flex-col items-center"
+      >
+        <img
+          [src]="character.image"
+          alt="{{ character.name }}"
+          class="w-32 h-32 rounded"
+        />
+        <div>
+          <h3 class="text-lg font-bold">{{ character.name }}</h3>
+          <p>
+            Status:
+            <span [style.color]="character.statusColor">{{
+              character.status
+            }}</span>
+          </p>
+          <p>Species: {{ character.species }}</p>
+          <p>Gender: {{ character.gender }}</p>
+          <a
+            [routerLink]="['/characters', character.id]"
+            class="text-blue-500 hover:underline"
+            >View Details</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
