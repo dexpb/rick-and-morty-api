@@ -8,7 +8,26 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        },
+        "architect": {
+        "prerender": {
+          "options": {
+            "routes": [
+              "/",
+              "/characters",
+              "/episodes",
+              "/episodes/season/1",
+              "/episodes/season/2",
+              "/episodes/season/3",
+              "/episodes/season/4",
+              "/episodes/season/5",
+              "/characters/1",
+              "/characters/2",
+              "/characters/3"
+            ]
+          }
         }
+      }
       },
       "root": "",
       "sourceRoot": "src",
