@@ -19,13 +19,7 @@ ng serve
 Uma vez com o servidor aberto, irá rodar na porta 4200: `http://localhost:4200/`. 
 
 
-## Building
 
-Para fazer a build do projeto:
-
-```bash
-ng build
-```
 
 # Tecnologias utilizadas:
 <br>
