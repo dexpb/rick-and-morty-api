@@ -7,6 +7,7 @@ E neste projeto, podemos obter informações de cada personagem, desde sua orige
 Também, input de busca, onde podemos pesquisar o personagem da série animada;
 <br>
 Foi adicionado também uma listagem de episódios, baseado em cada temporada (até então, a API permitiu apenas 51 episódios, correspondendo a 5 temporadas).
+Além disso, pode ser feito login, tendo username: rick, password: morty;
 
 ## Desenvolvimento
 
