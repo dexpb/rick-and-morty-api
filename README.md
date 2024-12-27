@@ -20,7 +20,7 @@ To build the project run:
 ng build
 ```
 
-#Tecnologias utilizadas:
+# Tecnologias utilizadas:
 Foram utilizados como Framework Angular;
 Também utilizado TailwindCSS, uma biblioteca CSS;
 Além disso, para icones, utilizei Angular Material, com icones Google;
