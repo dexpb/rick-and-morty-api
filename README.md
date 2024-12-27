@@ -1,59 +1,37 @@
-# L5Teste
+# Projeto com tema Rick and Morty
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+O conceito do projeto é utilizar a Rick and Morty API: https://rickandmortyapi.com/
+<br>
+E neste projeto, podemos obter informações de cada personagem, desde sua origem, até seu status atual;
+<br>
+Também, input de busca, onde podemos pesquisar o personagem da série animada;
+<br>
+Foi adicionado também uma listagem de episódios, baseado em cada temporada (até então, a API permitiu apenas 51 episódios, correspondendo a 5 temporadas).
 
-## Development server
+## Desenvolvimento
 
-To start a local development server, run:
+Para iniciar localmente o projeto, basta utilizar 
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Uma vez com o servidor aberto, irá rodar na porta 4200: `http://localhost:4200/`. 
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
 
 ## Building
 
-To build the project run:
+Para fazer a build do projeto:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+# Tecnologias utilizadas:
+<br>
+Foram utilizados como Framework Angular;
+<br>
+Também utilizado TailwindCSS, uma biblioteca CSS para melhorar o desenvolvimento com uma maior velocidade e desempenho pessoal;
+<br>
+Além disso, para icones, utilizei Angular Material, com icones Google;
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
